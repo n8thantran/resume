@@ -1,0 +1,234 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Nathan Tran} \\ \vspace{1pt}
+    \href{mailto:nathan.tran04@sjsu.edu}{\underline{nathan.tran04@sjsu.edu}} $|$ 
+    \href{https://linkedin.com/in/nthntrn}{\underline{linkedin.com/in/nthntrn}} $|$
+    \href{https://github.com/n8thantran}{\underline{github.com/n8thantran}} $|$ 
+    \href{https://n8than.me}{\underline{n8thantran.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {San Jose State University}{San Jose, CA}
+      {Bachelor of Science in Computer Science}{Expected Graduation: May 2028}
+      \begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Organizations}{: Software and Computer Engineering Society, Mozilla Responsible Computing Club} \\
+\textbf{Relevant Coursework}{: Data Structures and Algorithms, Object Oriented Design, Computer Architecture}
+}}
+\end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Ego (YC W24)}{Nov. 2024 -- Present}
+  {Software Engineering Intern}{San Francisco, CA}
+  \resumeItemListStart
+    \resumeItem{Enhanced Roblox game by implementing LLMs, improving conversation coherence and engagement by 20\%}
+    \resumeItem{Developed Discord mini-game with Claude API integration, reaching 1.5K active users within first month of launch}
+    \resumeItem{Engineered automated QA testing framework using LLM agents for efficient bug detection and gameplay testing}
+    \resumeItem{Optimized FastAPI backend through caching and query handling, reducing average response times by 15\%}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Uber}{Nov. 2024 -- Present}
+  {Software Engineering Fellow}{Remote}
+  \resumeItemListStart
+    \resumeItem{Selected for elite fellowship program (2.9\% acceptance rate) focused on engineering principles and system design}
+    \resumeItem{Mastering data structures and algorithms through weekly technical challenges and mock interview sessions}
+    \resumeItem{Collaborating with Uber engineers in bi-weekly mentorship sessions for code reviews and technical guidance}
+    \resumeItem{Building full-stack projects while learning industry best practices through structured GitHub feedback}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {SJSU Software \& Computer Engineering Society}{Sept. 2024 -- Present}
+      {Artificial Intelligence \& Machine Learning Team Lead}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{Engineered reinforcement learning model that outperformed human benchmarks in autonomous racing simulation}
+        \resumeItem{Implemented deep neural networks using PyTorch to optimize racing trajectories and vehicle control systems}
+        \resumeItem{Developed custom training environment and reward functions, achieving 30\% faster lap times than other students}
+        \resumeItem{Built interactive ML demos in Jupyter Notebooks to showcase AI agent performance to 20+ students}
+    \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{AVA (Accessible Voice Assistant)} $|$ \emph{Python, FastAPI, Groq, Perplexity, LangChain, ElevenLabs}}{March 2025}
+        \resumeItemListStart
+            \resumeItem{Identified accessibility gaps and built a voice-controlled browser navigation tool reaching 90\% command accuracy.}
+            \resumeItem{Tackled slow AI response times by implementing Groq and Perplexity Sonar, reducing latency by 65\%.}
+            \resumeItem{Developed agentic AI solution with LangChain, enabling users to automate email writing and flight booking.}
+            \resumeItem{Won \textbf{Best Multimodal Use of Groq} prize against 36 competing teams.}
+    \resumeItemListEnd
+          
+    \resumeProjectHeading
+    {\textbf{CanvAI} $|$ \emph{Next.js, Typescript, Python, Supabase, FastAPI}}{January 2025 -- Present}
+      \resumeItemListStart
+\resumeItem{Developed a Chrome extension that helps students manage Canvas assignments and deadlines with AI assistance}
+\resumeItem{Built user authentication system with Google OAuth and secure Canvas token storage via Supabase}
+\resumeItem{Integrated Canvas API to search files, submit assignments, and sync deadlines with Notion/Google Calendar.}
+\resumeItem{Streamlined student workflows by unifying secure auth, AI insights, and robust API integrations.}
+
+      \resumeItemListEnd
+    
+  \resumeProjectHeading
+      {\textbf{DreamScapes} $|$ \emph{Meta Quest 3, Unity, C\#, Python, PyTorch, FastAPI}}{November 2024}
+      \resumeItemListStart
+        \resumeItem{A real-time VR application that uses voice descriptions to render an immersive 3d environment}
+        \resumeItem{Architected FastAPI backend reducing voice-to-3D scene generation time from 2 minutes to 30 seconds}
+        \resumeItem{Built dynamic VR asset loading system supporting real-time scene updates for seamless user experience}
+        \resumeItem{Won \textbf{Best Use of AI in XR} and \textbf{Best Use of AWS} prizes out of 60 teams at Stanford XR hackathon}
+      \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C\#, Javascript, Typescript, HTML/CSS} \\
+     \textbf{Frameworks}{: OpenAI API, MongoDB, Flask, Pandas, MatPlotLib, Scikit-Learn, PyTorch, Selenium, React, Next.js} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio, Unity} \\
+     \textbf{Libraries}{: NumPy, Scikit-Learn, BeautifulSoup4, FastAPI, LangChain, Groq}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
